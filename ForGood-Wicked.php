@@ -125,7 +125,7 @@ $juggleLine3 = "It's like the sun get too close, and it burns you. So, " . $verb
 $juggleLine4 = "A " . strtoupper($nouns[0]) . " full of " . strtoupper($adjectives[3]) . " moments never fades.";
 
 echo "<div class='juggle'>";
-echo "<h3>Juggling Thoughts</h3>";
+echo "<h3>Thoughts</h3>";
 echo "<p>$juggleLine1</p>";
 echo "<p>$juggleLine2</p>";
 echo "<p>$juggleLine3</p>";
