@@ -70,45 +70,40 @@ $verse2 = [
     "You'll be with me like a handprint on my " . $nouns[0] . "."
 ];
 
-
-//juggling
+// Total sections
 $totalLines = $verseCount + $repeatChorus;
 $lineLabel = "Verse " . 1 * 1; 
-
 
 // Output
 echo "<h1>$title</h1>";
 echo "<h3>$artist</h3>";
 echo "<p>Theme: $theme</p>";
 echo "<p>Total lyrical sections: $totalLines</p>";
+
 echo "<div class='verse'><h3>$lineLabel</h3>";
-
-//Looop using foreach
-// https://www.w3schools.com/php/php_looping_foreach.asp
-// https://www.php.net/manual/en/control-structures.foreach.php
-foreach ($verse1 as $line) {
-    echo "<p>$line</p>";
-}
+echo "<p>" . $verse1[0] . "</p>";
+echo "<p>" . $verse1[1] . "</p>";
+echo "<p>" . $verse1[2] . "</p>";
+echo "<p>" . $verse1[3] . "</p>";
 echo "</div>";
+
 echo "<div class='chorus'><h3>Chorus</h3>";
-for ($i = 0; $i < $repeatChorus; $i++) {
-    foreach ($chorus as $line) {
-        echo "<p>$line</p>";
-    }
-}
-echo "</div>";
-echo "<div class='verse'><h3>Verse 2</h3>";
-foreach ($verse2 as $line) {
-    echo "<p>$line</p>";
-}
+echo "<p>" . $chorus[0] . "</p>";
+echo "<p>" . $chorus[1] . "</p>";
+echo "<p>" . $chorus[0] . "</p>";
+echo "<p>" . $chorus[1] . "</p>";
 echo "</div>";
 
-// Final chorus with slight variation, strtoupper for Uppercase
-//https://www.w3schools.com/php/func_string_strtoupper.asp#gsc.tab=0
+echo "<div class='verse'><h3>Verse 2</h3>";
+echo "<p>" . $verse2[0] . "</p>";
+echo "<p>" . $verse2[1] . "</p>";
+echo "<p>" . $verse2[2] . "</p>";
+echo "<p>" . $verse2[3] . "</p>";
+echo "</div>";
+
 $finalLine = "Because I knew you, I have been " . $verbs[4] . "d for " . strtoupper($adjectives[0]) . ".";
-echo "<div class='chorus'> 
-      <h3>Final Chorus</h3>";
-echo "<p>$chorus[0]</p>";
+echo "<div class='chorus'><h3>Final Chorus</h3>";
+echo "<p>" . $chorus[0] . "</p>";
 echo "<p>$finalLine</p>";
 echo "</div>";
 ?>
