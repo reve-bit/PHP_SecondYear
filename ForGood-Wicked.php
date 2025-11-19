@@ -23,15 +23,25 @@
         font-size: 2em;
         padding: 5px 10px;
         border-radius: 5px;
+        margin-bottom: 25px;
     }
-    .verse, .chorus { 
-        margin-bottom: 20px; 
+    .verse, .chorus, .juggle { 
+        margin-bottom: 60px; 
         text-align: center; 
         font-size: 1.2em;
+
     }
     .chorus { 
         font-weight: bold; 
         color: green;
+    }
+    .juggle {
+        color: #555;
+        font-style: italic;
+        line-height: 20px;
+    }
+    h3 {
+        margin-bottom: 20px;
     }
     </style>
 </head>
@@ -101,10 +111,25 @@ echo "<p>" . $verse2[2] . "</p>";
 echo "<p>" . $verse2[3] . "</p>";
 echo "</div>";
 
+// Final chorus with variation
 $finalLine = "Because I knew you, I have been " . $verbs[4] . "d for " . strtoupper($adjectives[0]) . ".";
 echo "<div class='chorus'><h3>Final Chorus</h3>";
 echo "<p>" . $chorus[0] . "</p>";
 echo "<p>$finalLine</p>";
+echo "</div>";
+
+// Juggling section
+$juggleLine1 = "Love for our " . $nouns[3] . " is like a " . $nouns[5] . " you get " . $adjectives[2] . ", but";
+$juggleLine2 = "we need to " . $verbs[2] . " that friendship isn't always a rainbow. Sometimes, you need to " . $verbs[3] . ".";
+$juggleLine3 = "It's like the sun get too close, and it burns you. So, " . $verbs[4] . ".";
+$juggleLine4 = "A " . strtoupper($nouns[0]) . " full of " . strtoupper($adjectives[3]) . " moments never fades.";
+
+echo "<div class='juggle'>";
+echo "<h3>Juggling Thoughts</h3>";
+echo "<p>$juggleLine1</p>";
+echo "<p>$juggleLine2</p>";
+echo "<p>$juggleLine3</p>";
+echo "<p>$juggleLine4</p>";
 echo "</div>";
 ?>
 
