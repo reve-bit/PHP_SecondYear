@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:500,700");
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: #850825;
+  color: #fbccbf;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; 
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: #fcba63;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 20px 0;
+  margin: 0;
+  color: #fcba63;
+}
+
+p {
+  padding: 6px 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.shopping-table {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #fbccbf;
+  width: 90%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.shopping-table th {
+  background: linear-gradient(135deg, #fbccbf, #fcba63);
+  color: #850825;
+  padding: 12px 20px;
+  text-transform: uppercase;
+}
+
+.shopping-table td {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 20px;
+}
+
+.shopping-table tr:nth-child(even) td {
+  background: rgba(251, 204, 191, 0.05);
+}
+
+.shopping-table tr:hover td {
+  background: rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.total-row td {
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: bold;
+  text-align: center;
+}
+
+.highlight {
+  color: #ffe66d;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  background-color: #730720;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  color: #fbccbf;
+}
+header{
+    background-color: #730720;
+    text-align: center;
+    font-size: large;
+}
