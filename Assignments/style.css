@@ -1,0 +1,152 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700|Playfair+Display:700");
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    background-color: #e6f0fa; /* light calming blue */
+    color: #1a1a1a;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #4a90e2; /* calming blue */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Playfair Display", serif;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content h1, .main-content h2 {
+    text-align: center;
+    color: #2c3e50; /* dark blue for headings */
+    margin-bottom: 15px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #d9e6f7; /* soft blue */
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+table tr:nth-child(even) {
+    background-color: #f5f9ff; /* very light blue for alternate rows */
+}
+
+table tr:hover {
+    background-color: #e1efff;
+}
+
+.highlight {
+    background-color: #b3d1ff; /* soft accent for messages */
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+
+/* Buttons / Status */
+.reorder-yes {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.reorder-no {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* Recommendations Section */
+.recommendation-section {
+    background-color: #f5f9ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.recommendation-card {
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #4a90e2;
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table th, table td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-content h1, .main-content h2 {
+        font-size: 1.3rem;
+    }
+}
+.center-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    text-align: center;
+    background-color: #f5f9ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.center-container p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #2c3e50;
+}
+
+.thank-you {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
